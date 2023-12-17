@@ -4,14 +4,29 @@ import java.util.*;
 
 public class Anagram {
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.isAnagram("anagram", "nagaram"));
-        System.out.println(solution.isAnagram("pabcer", "abc"));
-        System.out.println(solution.isAnagram("rat", "car"));
+        System.out.println(new Solution_1().isAnagram("anagram", "nagaram"));
+        System.out.println(new Solution_1().isAnagram("rat", "car"));
+        System.out.println(new Solution_2().isAnagram("anagram", "nagaram"));
+        System.out.println(new Solution_2().isAnagram("rat", "car"));
+        System.out.println(new Solution_3().isAnagram("anagram", "nagaram"));
+        System.out.println(new Solution_3().isAnagram("rat", "car"));
     }
 }
 
-class Solution {
+/**
+ Time complexity: O(n log n)
+ O(1): Checking the lengths of the strings.
+ O(n): Converting the strings to character arrays.
+ O(n log n): Sorting both character arrays. This is the dominant term due to the use of sorting algorithms like merge
+ sort or quicksort.
+ O(n): Comparing the sorted arrays.
+
+ Space complexity: O(n)
+ O(n): Two character arrays to store the converted strings.
+ O(n): Temporary space used by the sorting algorithm (depends on the specific algorithm used).
+ */
+
+class Solution_1 {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
@@ -22,51 +37,28 @@ class Solution {
         Arrays.sort(str2);
         return Arrays.equals(str1, str2);
     }
+}
 
+/**
+ Time complexity: O(n)
+ O(1): Checking the lengths of the strings.
+ O(n): Iterating through each character in both strings and updating the character counts.
+ O(n): Iterating through the character count array to check for non-zero values.
 
-// =======================================
-//            Sure, I'd be happy to explain the code. This Java program checks if two strings are anagrams of each
-//            other without using library functions. Here's a breakdown of how it works:
-//
-//            1. `if (s.length() != t.length()) { return false; }`: This line checks if the lengths of the two strings
-//            are equal. If they're not, it immediately returns `false` because two strings can't be anagrams if they
-//            have different lengths.
-//
-//            2. `int[] charCounts = new int[26];`: This line creates an array of 26 integers to count the occurrences
-//            of each lowercase English letter in the strings. Each index in the array corresponds to a letter ('a' is
-//            at index 0, 'b' is at index 1, and so on).
-//
-//            3. The `for` loop `for (int i = 0; i < s.length(); i++) { ... }` iterates over the characters in the
-//            strings. For each character, it increments the count for that character in `s` and decrements the count
-//            for that character in `t`. This is done with the lines `charCounts[s.charAt(i) - 'a']++;` and
-//            `charCounts[t.charAt(i) - 'a']--;`.
-//
-//            4. The `for` loop `for (int count : charCounts) { ... }` then iterates over the counts in the `charCounts`
-//            array. If it finds a count that is not zero, it returns `false`. This is because if the strings are
-//            anagrams, all counts should be zero at the end.
-//
-//            5. If the program hasn't returned `false` by this point, it returns `true`, indicating that the strings
-//            are anagrams.
-//
-//            This method is efficient and works well for strings that only contain lowercase English letters. If the
-//            strings can contain other characters, you would need to adjust the size of the `charCounts` array and the
-//            calculations accordingly.
-//
-//            I hope this helps! Let me know if you have any other questions. 😊
+ Space complexity: O(1)
+ O(1): Fixed-size character count array with 26 elements (assuming ASCII characters).
+ */
 
-    public boolean areAnagrams(String s, String t) {
-
+class Solution_2 {
+    public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
         }
-
         int[] charCounts = new int[26];
-
         for (int i = 0; i < s.length(); i++) {
             charCounts[s.charAt(i) - 'a']++;
             charCounts[t.charAt(i) - 'a']--;
         }
-
         for (int count : charCounts) {
             if (count != 0) {
                 return false;
@@ -76,11 +68,50 @@ class Solution {
     }
 }
 
+/**
+ Time complexity: O(n!)
+ O(n!): The permute function generates all possible permutations of the t string, which involves a recursive nested
+ loop that iterates over each character position and performs further permutations on the remaining string.
+ This leads to a factorial growth in the number of operations as the string length increases.
+ O(n): Checking each permuted string against s involves iterating through both strings once, creating an additional
+ O(n) complexity layer for each permutation.
+
+ Space complexity: O(n!)
+ O(n!): Each recursive call to permute creates a new string object to store the current prefix, leading to a stack
+ of such strings during the permutation process. As the number of permutations grows factorially, the space complexity
+ also increases dramatically.
+ */
+
+class Solution_3 {
+    public boolean isAnagram(String s, String t) {
+        List<String> tPermutations = new ArrayList<>();
+        permute(t, "", tPermutations);
+        for (String permutation : tPermutations) {
+            if (permutation.equals(s)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void permute(String str, String prefix, List<String> permutations) {
+        if (str.isEmpty()) {
+            permutations.add(prefix);
+        } else {
+            for (int i = 0; i < str.length(); i++) {
+                String rem = str.substring(0, i) + str.substring(i + 1);
+                permute(rem, prefix + str.charAt(i), permutations);
+            }
+        }
+    }
+}
+
 // Topic:
 // Why it is bad to find every combination and match
 // Why substring did not work
 // char[] vs String[] vs String, int[]
 // https://leetcode.com/problems/valid-anagram/
+
 
 
 

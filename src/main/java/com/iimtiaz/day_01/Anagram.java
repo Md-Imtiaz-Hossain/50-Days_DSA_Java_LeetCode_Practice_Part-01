@@ -106,16 +106,8 @@ class Solution_3 {
     }
 }
 
-// Topic:
-// Why it is bad to find every combination and match
-// Why substring did not work
-// char[] vs String[] vs String, int[]
-// https://leetcode.com/problems/valid-anagram/
-
-
-
-
-
-
-
+// Note:
+// Keyword:
+// Learned: char[] vs String[] vs String, int[]
+// Leetcode link: https://leetcode.com/problems/valid-anagram/
 

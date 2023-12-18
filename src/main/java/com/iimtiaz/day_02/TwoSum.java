@@ -8,26 +8,27 @@ public class TwoSum {
     public static void main(String[] args) {
         int[] nums = {3, 2, 4};
         int target = 6;
-        System.out.println(Arrays.toString(new Solution_1().twoSum(nums, target)));
+        System.out.println(Arrays.toString(new Solution_1().twoSum_1(nums, target)));
         System.out.println(Arrays.toString(new Solution_2().twoSum_2(nums, target)));
+        System.out.println(Arrays.toString(new Solution_3().twoSum_3(nums, target)));
     }
 }
 
 /**
- * Time complexity: O(n^2)
- * O(1): Initializing variables like result.
- * O(n * n): Nested loop iterates through each element of the array
- * twice (n times for the outer loop and n times
- * for the inner loop).
- * O(1): Checking if i != j and comparing if nums[i] + nums[j] == target
- * are both constant time operations.
- * <p>
- * Space complexity: O(1)
- * Only a few constant-size variables are used (e.g., i, j, result).
+ Time complexity: O(n^2)
+ O(1): Initializing variables like result.
+ O(n * n): Nested loop iterates through each element of the array
+ twice (n times for the outer loop and n times
+ for the inner loop).
+ O(1): Checking if i != j and comparing if nums[i] + nums[j] == target
+ are both constant time operations.
+
+ Space complexity: O(1)
+ Only a few constant-size variables are used (e.g., i, j, result).
  */
 
 class Solution_1 {
-    public int[] twoSum(int[] nums, int target) {
+    public int[] twoSum_1(int[] nums, int target) {
         int[] result = null;
         for (int i = 0; i < nums.length; i++) {
             for (int j = i; j < nums.length; j++) {
@@ -43,17 +44,17 @@ class Solution_1 {
 }
 
 /**
- * Time Complexity: O(n) (linear time)
- * We iterate through the array once, which takes O(n) time.
- * For each element, we calculate its complement (the value needed to reach the target).
- * The hash map allows constant-time lookups, so checking if the complement exists in the
- * map also takes O(1) time. Overall, the time complexity is O(n).
- * <p>
- * Space Complexity: O(n) (linear space)
- * We use a hash map (numToIndex) to store encountered elements and their indices.
- * The space required depends on the number of items stored in the hash map.
- * In the worst case, when all elements are unique, the map stores exactly n elements.
- * Therefore, the space complexity is O(n).
+ Time Complexity: O(n) (linear time)
+ We iterate through the array once, which takes O(n) time.
+ For each element, we calculate its complement (the value needed to reach the target).
+ The hash map allows constant-time lookups, so checking if the complement exists in the
+ map also takes O(1) time. Overall, the time complexity is O(n).
+
+ Space Complexity: O(n) (linear space)
+ We use a hash map (numToIndex) to store encountered elements and their indices.
+ The space required depends on the number of items stored in the hash map.
+ In the worst case, when all elements are unique, the map stores exactly n elements.
+ Therefore, the space complexity is O(n).
  */
 
 class Solution_2 {
@@ -90,7 +91,7 @@ class Solution_2 {
  */
 
 class Solution_3 {
-    public int[] twoSum(int[] nums, int target) {
+    public int[] twoSum_3(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
         int n = nums.length;
         // Build the hash table

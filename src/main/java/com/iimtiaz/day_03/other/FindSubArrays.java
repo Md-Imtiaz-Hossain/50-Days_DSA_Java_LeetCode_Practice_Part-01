@@ -1,4 +1,4 @@
-package com.iimtiaz.day_03;
+package com.iimtiaz.day_03.other;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,7 @@ import java.util.List;
 public class FindSubArrays {
     public static void main(String[] args) {
         int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        int[] nums2 = {1, 5, 3, -8};
-        List<List<Integer>> result = findAllSubarray(nums2);
+        List<List<Integer>> result = findAllSubarray(nums);
         for (List<Integer> subarray : result) {
             System.out.println("Subarray: " + subarray);
             Integer r = 0;
@@ -40,7 +39,6 @@ public class FindSubArrays {
         return result;
     }
 }
-
 
 //        In Java, the concept of a subarray usually refers to a contiguous sequence of elements within
 //        an array. So, [-2, 1] and [1, -2] would be considered different subarrays because they

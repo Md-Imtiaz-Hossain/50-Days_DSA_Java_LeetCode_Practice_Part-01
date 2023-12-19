@@ -44,17 +44,14 @@ class Solution_1 {
 }
 
 /**
- Time Complexity: O(n) (linear time)
- We iterate through the array once, which takes O(n) time.
- For each element, we calculate its complement (the value needed to reach the target).
- The hash map allows constant-time lookups, so checking if the complement exists in the
- map also takes O(1) time. Overall, the time complexity is O(n).
+ Time complexity: O(n)
+ O(1): Initializing variables like numToIndex.
+ O(n): Single loop iterates through each element of the array once.
+ O(1): Hash table operations like containsKey, get, and put are generally considered constant time on average.
 
- Space Complexity: O(n) (linear space)
- We use a hash map (numToIndex) to store encountered elements and their indices.
- The space required depends on the number of items stored in the hash map.
- In the worst case, when all elements are unique, the map stores exactly n elements.
- Therefore, the space complexity is O(n).
+ Space complexity: O(n)
+ The numToIndex Hash Table stores mappings between each element and its index, requiring space proportional
+ to the array size (n).
  */
 
 class Solution_2 {

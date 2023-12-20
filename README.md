@@ -10,3 +10,4 @@ All 50
 ![Day 03.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_03%2FDay%2003.png)
 
 ## Day 04
+![Day 04.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_04%2FDay%2004.png)

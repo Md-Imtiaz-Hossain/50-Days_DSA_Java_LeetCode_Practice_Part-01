@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Anagram {
     public static void main(String[] args) {
-        System.out.println(new Solution_1().isAnagram("anagram", "nagaram"));
+        System.out.println(new Solution_1().isAnagram("anagram", "Nagaram"));
         System.out.println(new Solution_1().isAnagram("rat", "car"));
         System.out.println(new Solution_2().isAnagram("anagram", "nagaram"));
         System.out.println(new Solution_2().isAnagram("rat", "car"));
@@ -17,8 +17,7 @@ public class Anagram {
  Time complexity: O(n log n)
  O(1): Checking the lengths of the strings.
  O(n): Converting the strings to character arrays.
- O(n log n): Sorting both character arrays. This is the dominant term due to the use of sorting algorithms like merge
- sort or quicksort.
+ O(n log n): Sorting both character arrays. sort(char[] a): Java use Dual-Pivot Quicksort, O(n log n)
  O(n): Comparing the sorted arrays.
 
  Space complexity: O(n)
@@ -31,9 +30,10 @@ class Solution_1 {
         if (s.length() != t.length()) {
             return false;
         }
-        char[] str1 = s.toCharArray();
-        char[] str2 = t.toCharArray();
-        Arrays.sort(str1);
+        char[] str1 = s.toLowerCase().toCharArray();
+        char[] str2 = t.toLowerCase().toCharArray();
+
+        Arrays.sort(str1); // sort(char[] a) --> Java use Dual-Pivot Quicksort, O(n log n)
         Arrays.sort(str2);
         return Arrays.equals(str1, str2);
     }

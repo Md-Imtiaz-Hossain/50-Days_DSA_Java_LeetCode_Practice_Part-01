@@ -44,3 +44,9 @@
 
 ## Day 04
 ![Day 04.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_04%2FDay%2004.png)
+
+## Day 05
+![Day 05.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_05%2FDay%2005.png)
+
+## Day 06
+![Day 06.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_06%2FDay%2006.png)

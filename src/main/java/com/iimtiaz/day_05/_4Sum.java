@@ -1,7 +1,6 @@
 package com.iimtiaz.day_05;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class _4Sum {
     public static void main(String[] args) {

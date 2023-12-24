@@ -50,3 +50,6 @@
 
 ## Day 06
 ![Day 06.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_06%2FDay%2006.png)
+
+## Day 07
+![Day 07.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_07%2FDay%2007.png)

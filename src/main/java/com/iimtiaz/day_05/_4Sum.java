@@ -7,7 +7,7 @@ public class _4Sum {
 
         int[] nums = {1, 0, -1, 0, -2, 2};
         int target = 0;
-        System.out.println(new Solution().fourSum(nums, target));
+        System.out.println(new Solution_1().fourSum(nums, target));
         System.out.println();
 
     }
@@ -23,7 +23,7 @@ public class _4Sum {
  * and list can store all elements of the array, hence the space complexity is linear.
  */
 
-class Solution {
+class Solution_1 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Arrays.sort(nums);
         Set<List<Integer>> s = new HashSet<>();

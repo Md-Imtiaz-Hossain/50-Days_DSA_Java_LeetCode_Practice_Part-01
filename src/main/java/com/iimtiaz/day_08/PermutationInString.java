@@ -44,3 +44,5 @@ class Solution_3 {
         return true;
     }
 }
+
+//https://leetcode.com/problems/permutation-in-string/description/

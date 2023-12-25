@@ -30,8 +30,8 @@
 * The choice of appropriate data structures and algorithms is crucial for efficient and scalable software development.
 * Understanding data structures and algorithms is essential for solving complex programming problems and designing efficient solutions.
 
-
-![Big O.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2FBig%20O.png)
+![Big O.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2FDSA_theory%2FBig%20O.png)
+![Big O 1.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2FDSA_theory%2FBig%20O%201.png)
 
 ## Day 01
 ![Day 01.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_01%2FDay%2001.png)
@@ -53,3 +53,6 @@
 
 ## Day 07
 ![Day 07.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_07%2FDay%2007.png)
+
+## Day 08
+![Day 08.png](..%2FDay%2008.png)

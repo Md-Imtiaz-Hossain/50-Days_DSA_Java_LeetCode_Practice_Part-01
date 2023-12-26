@@ -56,3 +56,6 @@
 
 ## Day 08
 ![Day 08.png](..%2FDay%2008.png)
+
+## Day 09
+![Day 09.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_09%2FDay%2009.png)

@@ -65,3 +65,6 @@
 
 ## Day 11
 ![Day 11.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_11%2FDay%2011.png)
+
+## Day 12
+![Day 12.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_12%2FDay%2012.png)

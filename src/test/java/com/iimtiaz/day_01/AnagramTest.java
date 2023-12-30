@@ -1,10 +1,12 @@
 package com.iimtiaz.day_01;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class AnagramTest {
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+public class AnagramTest {
     @Test
     public void testAnagrams() {
         Solution_1 solution = new Solution_1();

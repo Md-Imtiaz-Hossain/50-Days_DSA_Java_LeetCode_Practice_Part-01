@@ -71,3 +71,6 @@
 
 ## Day 13
 ![Day 13.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_13%2FDay%2013.png)
+
+## Day 14
+![Day 14.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_14%2FDay%2014.png)

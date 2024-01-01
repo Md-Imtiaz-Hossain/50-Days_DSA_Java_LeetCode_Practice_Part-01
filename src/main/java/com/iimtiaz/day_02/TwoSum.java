@@ -15,18 +15,17 @@ public class TwoSum {
 }
 
 /**
- Time complexity: O(n^2)
- O(1): Initializing variables like result.
- O(n * n): Nested loop iterates through each element of the array
- twice (n times for the outer loop and n times
- for the inner loop).
- O(1): Checking if i != j and comparing if nums[i] + nums[j] == target
- are both constant time operations.
+ * Time complexity: O(n^2)
+ * O(1): Initializing variables like result.
+ * O(n * n): Nested loop iterates through each element of the array
+ * twice (n times for the outer loop and n times
+ * for the inner loop).
+ * O(1): Checking if i != j and comparing if nums[i] + nums[j] == target
+ * are both constant time operations.
 
- Space complexity: O(1)
- Only a few constant-size variables are used (e.g., i, j, result).
+ * Space complexity: O(1)
+ * Only a few constant-size variables are used (e.g., i, j, result).
  */
-
 class Solution_1 {
     public int[] twoSum_1(int[] nums, int target) {
         int[] result = null;
@@ -44,16 +43,15 @@ class Solution_1 {
 }
 
 /**
- Time complexity: O(n)
- O(1): Initializing variables like numToIndex.
- O(n): Single loop iterates through each element of the array once.
- O(1): Hash table operations like containsKey, get, and put are generally considered constant time on average.
+ * Time complexity: O(n)
+ * O(1): Initializing variables like numToIndex.
+ * O(n): Single loop iterates through each element of the array once.
+ * O(1): Hash table operations like containsKey, get, and put are generally considered constant time on average.
 
- Space complexity: O(n)
- The numToIndex Hash Table stores mappings between each element and its index, requiring space proportional
- to the array size (n).
+ * Space complexity: O(n)
+ * The numToIndex Hash Table stores mappings between each element and its index, requiring space proportional
+ * to the array size (n).
  */
-
 class Solution_2 {
     public int[] twoSum_2(int[] nums, int target) {
         // Create a hash map to store encountered elements and their indices
@@ -72,21 +70,19 @@ class Solution_2 {
     }
 }
 
-
 /**
- Time complexity: O(n) (linear time)
- We iterate through the array twice:
- First, we build the hash map by adding each element to it. This takes O(n) time.
- Next, we find the complement for each element and check if it exists in the map.
- This also takes O(n) time. Therefore, the overall time complexity is O(n).
+ * Time complexity: O(n) (linear time)
+ * We iterate through the array twice:
+ * First, we build the hash map by adding each element to it. This takes O(n) time.
+ * Next, we find the complement for each element and check if it exists in the map.
+ * This also takes O(n) time. Therefore, the overall time complexity is O(n).
 
- Space complexity: O(n) (linear space)
- We use a hash map (numMap) to store encountered elements and their indices.
- The space required depends on the number of items stored in the hash map.
- In the worst case, when all elements are unique, the map stores exactly n elements.
- Therefore, the space complexity is O(n).
+ * Space complexity: O(n) (linear space)
+ * We use a hash map (numMap) to store encountered elements and their indices.
+ * The space required depends on the number of items stored in the hash map.
+ * In the worst case, when all elements are unique, the map stores exactly n elements.
+ * Therefore, the space complexity is O(n).
  */
-
 class Solution_3 {
     public int[] twoSum_3(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
@@ -109,9 +105,12 @@ class Solution_3 {
     }
 }
 
-
-// Note: 1. Return if no pair is found then not found, 2. If found multiple pair then return first pair and pair count,
-// 3, If found then return all pair and pair count, 4. Assume for sorted array and unsorted array
-// Keyword: array.length vs string.length()
-// Learned: Arrays.toString(),
-// Leetcode link: https://leetcode.com/problems/two-sum/
+// https://leetcode.com/problems/two-sum/
+// Keyword: array.length vs string.length(), null VS [],
+// Learned: Arrays.toString(), Map -> HashMap,
+// Note:
+// Other Related Question:
+    // 1. Return if no pair is found then not found,
+    // 2. If found multiple pair then return first pair and pair count,
+    // 3, If found then return all pair and pair count,
+    // 4. Assume for sorted array and unsorted array

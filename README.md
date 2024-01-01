@@ -1,6 +1,6 @@
 **Here's a comprehensive explanation of data structures and algorithms:**
 
-**Data Structures:**
+## **Data Structures:**
 
 * **Definition:** A data structure is a way of organizing and storing data in a computer so that it can be accessed and modified efficiently. It's like a blueprint for how data is arranged in memory.
 * **Purpose:** They provide efficient ways to manage and manipulate data, enabling a wide range of operations like searching, sorting, inserting, deleting, and more.
@@ -13,7 +13,7 @@
     - **Graphs:** Networks of nodes and edges, used to model connections and relationships.
     - **Hash Tables:** Dictionaries that store key-value pairs, providing fast lookups based on keys.
 
-**Algorithms:**
+## **Algorithms:**
 
 * **Definition:** An algorithm is a set of instructions or steps to solve a specific problem or perform a task. It's like a recipe or a detailed plan.
 * **Purpose:** Algorithms provide the logic for how to manipulate and process data within data structures to achieve desired outcomes.
@@ -24,7 +24,7 @@
     - **String Algorithms:** Pattern matching, text compression, or text editing.
     - **Mathematical Algorithms:** Performing numerical computations or solving mathematical problems.
 
-**Key Points:**
+## **Key Points:**
 
 * Data structures and algorithms are fundamental building blocks of computer science.
 * The choice of appropriate data structures and algorithms is crucial for efficient and scalable software development.

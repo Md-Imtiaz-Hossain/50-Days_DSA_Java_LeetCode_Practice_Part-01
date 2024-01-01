@@ -23,6 +23,16 @@ public class LRU_Cache {
     }
 }
 
+/**
+ * Time Complexity:
+ * get(key): O(1) average case, O(n) worst case (when eviction is needed).
+ * Accessing and removing from a LinkedHashMap is typically O(1), but eviction involves iterating over keys,
+ * potentially O(n).
+ * put(key, value): O(1) average case, O(n) worst case (when eviction is needed).
+ * Similar to get, operations on LinkedHashMap are generally O(1), but eviction can be O(n).
+ * Space Complexity:
+ * O(capacity), as the map stores up to capacity key-value pairs.
+ */
 class LRUCache {
 
     int capacity;

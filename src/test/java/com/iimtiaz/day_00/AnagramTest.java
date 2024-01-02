@@ -1,4 +1,4 @@
-package com.iimtiaz.day_01;
+package com.iimtiaz.day_00;
 
 
 import org.junit.Test;

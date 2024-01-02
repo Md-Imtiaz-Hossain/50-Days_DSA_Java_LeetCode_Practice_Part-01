@@ -5,3 +5,46 @@ Practice: Day 03, Day 16
 ------------------------
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+📢 Day 16: Embarking on a 50-Day DSA Challenge!
+
+Check! 🎯 I’m tackling a personal challenge to share daily learnings for the next 50 days, no skips allowed! And to kick things off, I'm diving into the world of Data Structures and Algorithms (DSA) – something I've been eager to master.
+
+📌 Today's conquest: Given an unsorted array of integers nums, find the smallest positive integer that is not present in the array. 🧩🔍
+
+Feeling: Motivated and energized! ⚡ Already looking forward to the Day 17th adventure.
+
+Let's learn together! Share your own DSA journey in the comments below.
+
+Leetcode- https://leetcode.com/problems/first-missing-positive/description/
+Solution- https://github.com/Md-Imtiaz-Hossain/50-Days_DSA_Java_LeetCode_Practice_Part-01/blob/master/src/main/java/com/iimtiaz/day_16/MissingNumber.java
+
+#50DaysOfDSA #problemsolving #DSAChallenge #Java #Coding #Algorithms #LearningLife

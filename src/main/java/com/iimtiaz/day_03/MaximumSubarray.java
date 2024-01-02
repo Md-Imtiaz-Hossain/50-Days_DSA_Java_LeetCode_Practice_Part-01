@@ -109,3 +109,10 @@ class Solution_3 {
         return maxSum;
     }
 }
+
+// https://leetcode.com/problems/maximum-subarray/description/
+// Keyword: array.length vs string.length(), null VS [],
+// Learned: Arrays.toString(), Map -> HashMap,
+// Note:
+// Follow up:
+    // If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.

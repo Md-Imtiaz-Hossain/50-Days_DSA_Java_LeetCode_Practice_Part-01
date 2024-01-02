@@ -99,7 +99,7 @@ class Solution_2 {
 */
 
 class Solution_3 {
-    public static int maxSubArray(int[] nums) {
+    public int maxSubArray(int[] nums) {
         int currentSum = nums[0];
         int maxSum = nums[0];
         for (int i = 1; i < nums.length; i++) {
@@ -112,7 +112,7 @@ class Solution_3 {
 
 // https://leetcode.com/problems/maximum-subarray/description/
 // Keyword: array.length vs string.length(), null VS [],
-// Learned: Arrays.toString(), Map -> HashMap,
+// Learned: Math.max,
 // Note:
 // Follow up:
     // If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.

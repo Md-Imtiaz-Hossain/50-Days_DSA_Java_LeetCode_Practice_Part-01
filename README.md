@@ -77,3 +77,6 @@
 
 ## Day 15
 ![Day 15.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_15%2FDay%2015.png)
+
+## Day 16
+![Day 16.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_16%2FDay%2016.png)

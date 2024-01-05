@@ -83,3 +83,6 @@
 
 ## Day 17
 ![Day 17.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_17%2FDay%2017.png)
+
+## Day 18
+![Day 18.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_18%2FDay%2018.png)

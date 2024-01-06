@@ -89,3 +89,6 @@
 
 ## Day 19
 ![](src/main/java/com/iimtiaz/day_19/Day 19.png)
+
+## Day 20
+![](src/main/java/com/iimtiaz/day_20/Day 20.png)

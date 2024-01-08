@@ -21,7 +21,17 @@ public class Main {
     }
 }
 
-
+/**
+ * Time Complexity: O(n)
+ *
+ * Single Recursive Pass: The algorithm makes a single recursive pass through the linked list, visiting each node once.
+ * Constant-Time Operations: The operations within each recursive call, such as comparing values, updating pointers,
+ * and returning, are constant-time operations.
+ * Space Complexity: O(n)
+ *
+ * Recursion Stack: The recursion stack can grow up to a depth of n in the worst case (skewed linked list), leading to
+ * a space complexity of O(n).
+ */
 class Solution {
     public boolean isPalindrome(ListNode head) {
         // check basic case where there is only one element

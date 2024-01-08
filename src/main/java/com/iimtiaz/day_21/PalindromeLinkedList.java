@@ -1,7 +1,7 @@
 package com.iimtiaz.day_21;
 
 
-public class Main {
+public class PalindromeLinkedList {
     public static void main(String[] args) {
         // Create a palindrome linked list: 1 -> 2 -> 3 -> 2 -> 1
         ListNode node5 = new ListNode(1);

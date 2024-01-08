@@ -92,3 +92,6 @@
 
 ## Day 20
 ![](src/main/java/com/iimtiaz/day_20/Day 20.png)
+
+## Day 21
+![day 21.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_21%2Fday%2021.png)

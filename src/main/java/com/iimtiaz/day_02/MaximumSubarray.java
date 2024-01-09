@@ -1,4 +1,4 @@
-package com.iimtiaz.day_03;
+package com.iimtiaz.day_02;
 
 import java.util.ArrayList;
 import java.util.List;

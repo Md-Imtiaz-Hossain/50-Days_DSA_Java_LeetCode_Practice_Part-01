@@ -1,4 +1,4 @@
-package com.iimtiaz.day_05;
+package com.iimtiaz.day_04;
 
 import java.util.*;
 

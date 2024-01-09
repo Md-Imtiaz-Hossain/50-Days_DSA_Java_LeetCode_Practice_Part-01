@@ -1,4 +1,4 @@
-package com.iimtiaz.day_02;
+package com.iimtiaz.day_01;
 
 import java.util.Arrays;
 import java.util.HashMap;

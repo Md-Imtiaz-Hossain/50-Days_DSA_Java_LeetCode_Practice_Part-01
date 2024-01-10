@@ -98,3 +98,6 @@
 
 ## Day 22
 ![Day 22.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_22%2FDay%2022.png)
+
+## Day 23
+![day 23.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_23%2Fday%2023.png)

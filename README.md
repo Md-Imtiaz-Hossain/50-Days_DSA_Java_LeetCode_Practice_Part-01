@@ -101,3 +101,6 @@
 
 ## Day 23
 ![day 23.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_23%2Fday%2023.png)
+
+## Day 24
+![Day 24.png](src%2Fmain%2Fjava%2Fcom%2Fiimtiaz%2Fday_24%2FDay%2024.png)
